@@ -37,7 +37,6 @@ ABC's data structure consists of two csv files containing high level member and 
 <details>
 <summary><strong>Entity Relationship Diagram (click to expand)</strong></summary> 
 
-<br>
 ![Entity Relationship Diagram](images/ERD.png)
 
 </details>
