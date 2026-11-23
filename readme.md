@@ -11,10 +11,10 @@ Below is the overview page from the Tableau dashboard and more examples are incl
 ![Summary](images/Summary.png)
 
 ## Business Problem
-Executives at ABC Insurance need a view of the data that will provides insight into costs that are driving down profits. The dashboard needs to provide cost information about claim types and high level details regarding procedures, diagnoses, and members related to cost.
+Executives at ABC Insurance need a view of the data that will provide insight into costs that are driving down profits. The dashboard needs to provide cost information about claim types and high level details regarding procedures, diagnoses, and members related to cost.
 
 ## Objectives
-Build a dashboard to answer C-Suite the following questions:
+Build a dashboard to answer the following C-Suite questions:
 1. What claim types are the most expensive? 
 2. Which CPT and ICD codes drive the highest spending?
 3. Which members account for the largest share of total costs?
@@ -30,7 +30,7 @@ Build a dashboard to answer C-Suite the following questions:
 | other/ | Other files used in analysis |
 
 ## Dataset
-ABC's data structure consists of two csv files containing high level member and claim information with a total of 551 records. A description of each file is as follows:
+ABC's data structure consists of two csv files containing high level member and claim information with a total of 549 records (100 members and 449 claims). A description of each file is as follows:
 * **Members**: high level information about each member, no personal information is revealed.
 * **Claims**: basic information about each claim.
 
@@ -53,7 +53,7 @@ Data sets were imported into Python to assess cleanup needs. No missing or dupli
 
 ## Key Findings
 **1. Most expensive claim types:**
-* The lergest claim type segment based on paid amount is for inpatient claims, which accounts for 70% of all paid claim amounts. 
+* The largest claim type segment based on paid amount is for inpatient claims, which accounts for 70% of all paid claim amounts. 
 * Pharmacy and Lab claims are the smallest cost segments (comprising 1-2% of the total paid), but have the highest paid ratios (91 and 89% respectively).
 
     <img src = "images/Claim-Type-Cost-Breakdown.png" width = "700">
@@ -66,7 +66,7 @@ Data sets were imported into Python to assess cleanup needs. No missing or dupli
     <img src = "images/CPT-Chart.png" width = "700">
 
 * The current top 5 diagnosis codes account for 46% of the total paid and 28% of all claims. 
-* Half of the top 10 diagnosis codes have average paid amounts greater than $5,000 per claim. If the dashboard is focued on Inpatient claims, 78% of the top 10 codes are above $10,000.
+* Half of the top 10 diagnosis codes have average paid amounts greater than $5,000 per claim. If the dashboard is focused on Inpatient claims, 78% of the top 10 codes are above $10,000.
 
     <img src = "images/ICD-Chart.png" width = "700">
 
